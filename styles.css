@@ -3,6 +3,41 @@ body {
   text-align: center;
   background-color: darkgrey;
 }
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  box-sizing: border-box;
+  height: 80vh;
+}
+.game-container {
+  background-color: rgba(255,255,255,0.63);
+  border-radius: 10px;
+  width: 73%;
+  height: 100%;
+}
+.instructions {
+  text-align: left;
+  background-color: lightgrey;
+  border-radius: 10px;
+  width: 25%;
+  height: 100%;
+}
+.instructions h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 20px;
+}
+.instructions li {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+  color: #000000;
+  margin: 20px;
+}
 h1 {
   font-size: 2.5rem;
   font-weight: 900;
@@ -102,14 +137,4 @@ h1 {
   margin-top: 20px;
   padding: 10px;
   border-radius: 10px;
-}
-.instructions {
-  text-align: left;
-  background-color: lightgrey;
-  border-radius: 10px;
-  padding: 50px;
-  margin: auto;
-  margin-top: 50px;
-  width: 80%;
-  
 }

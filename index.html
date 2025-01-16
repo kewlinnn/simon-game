@@ -10,38 +10,44 @@
 
 <body>
   <h1>Simon Game</h1>
-  <h2 class="state-title">Start</h2>
 
-  <div class="container">
-    <div lass="row">
-      <div type="button" id="green" class="btn green"></div>
-      <div type="button" id="red" class="btn red"></div>
-    </div>
-    <div class="row">
-      <div type="button" id="yellow" class="btn yellow"></div>
-      <div type="button" id="blue" class="btn blue"></div>
-    </div>
-  </div>
-
-  <div>
-    <button class="game-start">Start</button>
-  </div>
-
-  <div class="stats-container">
-    <p id="level-title" class="label">Level</h2>
-    <p id="moves-count" class="label">Moves</p>
-  </div>
-
-  <div class="instructions">
-    <h2>How to Play</h2>
-    <ol>
-      <li>Press ENTER key or click START button to start the game.</li>
-      <li>Watch and memorize the color sequence shown.</li>
-      <li>Click the buttons in the correct order to match the sequence.</li>
-      <li>Level up as you successfully replicate the sequence.</li>
-      <li>Made a mistake? No worries! Restart and try again.</li>
-    </ol>
-  </div>
+  <section class="main">
+    <div class="game-container">
+      <h2 class="state-title">Start</h2>
+   
+       <!--Game Buttons-->
+       <div class="container">
+         <div lass="row">
+           <div type="button" id="green" class="btn green"></div>
+           <div type="button" id="red" class="btn red"></div>
+         </div>
+         <div class="row">
+           <div type="button" id="yellow" class="btn yellow"></div>
+           <div type="button" id="blue" class="btn blue"></div>
+         </div>
+       </div>
+   
+       <div>
+         <button class="game-start">Start</button>
+       </div>
+   
+       <div class="stats-container">
+         <p id="level-title" class="label">Level</h2>
+         <p id="moves-count" class="label">Moves</p>
+       </div>
+     </div>
+   
+     <div class="instructions">
+       <h2>How to Play</h2>
+       <ol>
+         <li>Press ENTER key or click START button to start the game.</li>
+         <li>Watch and memorize the color sequence shown.</li>
+         <li>Click the buttons in the correct order to match the sequence.</li>
+         <li>Level up as you successfully replicate the sequence.</li>
+         <li>Made a mistake? No worries! Restart and try again.</li>
+       </ol>
+     </div>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="game.js"></script>
