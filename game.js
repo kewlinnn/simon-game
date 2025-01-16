@@ -109,9 +109,9 @@ function checkAnswer() {
     }, 1500);
   } else {
     playSound("wrong");
-    $("body").addClass("game-over");
+    $(".game-container").addClass("game-over");
     setTimeout(function () {
-      $("body").removeClass("game-over");
+      $(".game-container").removeClass("game-over");
     }, 200);
 
     $("#state-title").text("Game Over, Press Any Key to Restart");

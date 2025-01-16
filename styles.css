@@ -1,7 +1,22 @@
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: center;
-  background-color: darkgrey;
+  background-color: #3C3D37;
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  background-color: #1E201E;
+  font-size: 5rem;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4rem;;
+  font-weight: 900;
+  color: #ECDFCC;
+  margin: 0px;
+  padding: 20px;
 }
 .main {
   display: flex;
@@ -12,14 +27,15 @@ body {
   height: 80vh;
 }
 .game-container {
-  background-color: rgba(255,255,255,0.63);
+  background-color: #cec2b1;
   border-radius: 10px;
   width: 73%;
   height: 100%;
 }
 .instructions {
   text-align: left;
-  background-color: lightgrey;
+  color: #ECDFCC;
+  background-color: #697565;
   border-radius: 10px;
   width: 25%;
   height: 100%;
@@ -28,21 +44,13 @@ body {
   font-size: 2rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: #000000;
   margin: 20px;
 }
 .instructions li {
   font-size: 1.5rem;
   font-weight: 300;
   text-align: left;
-  color: #000000;
-  margin: 20px;
-}
-h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #000000;
+  margin: 20px 50px auto 50px;
 }
 .state-title {
   font-family: 'Press Start 2P', cursive;
