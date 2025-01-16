@@ -18,6 +18,17 @@ $(document).keydown(function (event) {
   }
 });
 
+$(".game-start").click(function () {
+  if (!started) {
+    $(".game-start").attr("disabled", true).fadeOut(200);
+    setTimeout(function () {
+      nextSequence();
+    }, 800);
+    started = true;
+    userClickedPattern.length = 0;
+  }
+});
+
 // selecting random color to add to the sequence
 function nextSequence() {
   $("#level-title").text("Level " + level);
@@ -36,7 +47,7 @@ function nextSequence() {
 function playSequence () {
 
 
-  $("#state-title").text("Watch").addClass("watch");
+  $(".state-title").text("Watch").removeClass("repeat").addClass("watch");
   
   for (let i = 0; i < gamePattern.length; i++) {
     setTimeout(function () {
@@ -45,7 +56,7 @@ function playSequence () {
     }, i * 400);
   }
   setTimeout(function () {
-    $("#state-title").text("Repeat").addClass("repeat");
+    $(".state-title").text("Play").addClass("repeat");
   }, gamePattern.length * 500);
 }
 
