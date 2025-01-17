@@ -167,4 +167,6 @@ h1 {
 footer {
   padding: 10px;
   color: #ECDFCC;
+  position: fixed;
+  bottom: 0;
 }
