@@ -3,7 +3,8 @@ body {
   text-align: center;
   background-color: #3C3D37;
   margin: 0px;
-  padding: 0px;
+
+  position: relative;
 }
 .header {
   background-color: #1E201E;
@@ -150,6 +151,12 @@ h1 {
   padding: 10px;
   border-radius: 10px;
 }
+footer {
+  color: #ECDFCC;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
 
 @media only screen and (max-width: 1024px) {
   .main {
@@ -163,10 +170,4 @@ h1 {
     width: 100%;
     margin-top: 20px;
   }
-}
-footer {
-  padding: 10px;
-  color: #ECDFCC;
-  position: fixed;
-  bottom: 0;
 }
