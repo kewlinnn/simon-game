@@ -10,16 +10,17 @@ $(document).keydown(function (event) {
   const enter = "Enter";
 
   if (!started && event.key === enter) {
-    setTimeout(function () {
-      nextSequence();
-    }, 800);
-    started = true;
-    userClickedPattern.length = 0;
+    gameStart();
   }
 });
 
 $(".game-start").click(function () {
+  gameStart();
+});
+
+function gameStart() {
   if (!started) {
+    $("#moves-count").text("Moves: 0");
     $(".game-start").attr("disabled", true).fadeOut(200);
     setTimeout(function () {
       nextSequence();
@@ -27,7 +28,7 @@ $(".game-start").click(function () {
     started = true;
     userClickedPattern.length = 0;
   }
-});
+}
 
 // selecting random color to add to the sequence
 function nextSequence() {
@@ -114,7 +115,8 @@ function checkAnswer() {
       $(".game-container").removeClass("game-over");
     }, 200);
 
-    $("#state-title").text("Game Over, Press Any Key to Restart");
+    $(".state-title").text("Game Over").removeClass("repeat");
+    $(".game-start").attr("disabled", false).fadeIn(200);
     startOver();
   }
 }
